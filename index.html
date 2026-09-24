@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fall Limited Edition Sneakers from Sneakers Company">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Fall Limited Edition Sneakers | Sneakers</title>
+</head>
+<body>
+  <div class="site-overlay" data-overlay hidden></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-button" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" data-menu-open><img src="images/icon-menu.svg" alt=""></button>
+      <a class="brand" href="index.html" aria-label="Sneakers home"><img src="images/logo.svg" alt="sneakers"></a>
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-menu-panel>
+        <button class="icon-button menu-close" type="button" aria-label="Close navigation" data-menu-close><img src="images/icon-close.svg" alt=""></button>
+        <a class="nav-link active" href="#collections">Collections</a><a class="nav-link" href="#men">Men</a><a class="nav-link" href="#women">Women</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="cart-wrap">
+          <button class="icon-button cart-button" type="button" aria-label="Open cart" aria-controls="cart-panel" aria-expanded="false" data-cart-toggle><img src="images/icon-cart.svg" alt=""><span class="cart-badge" data-cart-count hidden>0</span></button>
+          <section class="cart-panel" id="cart-panel" aria-label="Shopping cart" aria-live="polite" hidden data-cart-panel><h2>Cart</h2><div class="cart-content" data-cart-content></div></section>
+        </div>
+        <button class="avatar-button" type="button" aria-label="Open account"><img src="images/image-avatar.png" alt="Account profile"></button>
+      </div>
+    </div>
+  </header>
+  <main class="product-page">
+    <section class="gallery" aria-label="Product images">
+      <div class="hero-image-wrap">
+        <button class="gallery-arrow gallery-arrow-prev" type="button" aria-label="Previous image" data-gallery-prev><img src="images/icon-previous.svg" alt=""></button>
+        <button class="hero-image-button" type="button" aria-label="Open product image gallery" data-lightbox-open><img class="hero-image" src="images/image-product-1.jpg" alt="A pair of white and orange sneakers, front view" data-hero-image></button>
+        <button class="gallery-arrow gallery-arrow-next" type="button" aria-label="Next image" data-gallery-next><img src="images/icon-next.svg" alt=""></button>
+      </div>
+      <div class="thumbnail-list" role="list" aria-label="Choose product image">
+        <button class="thumbnail active" type="button" role="listitem" aria-label="View product image 1" aria-pressed="true" data-image-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="Sneakers, front view thumbnail"></button>
+        <button class="thumbnail" type="button" role="listitem" aria-label="View product image 2" aria-pressed="false" data-image-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="Sneakers, side view thumbnail"></button>
+        <button class="thumbnail" type="button" role="listitem" aria-label="View product image 3" aria-pressed="false" data-image-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="Sneakers, alternate view thumbnail"></button>
+        <button class="thumbnail" type="button" role="listitem" aria-label="View product image 4" aria-pressed="false" data-image-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="Sneakers, top view thumbnail"></button>
+      </div>
+    </section>
+    <section class="product-details" aria-labelledby="product-title">
+      <p class="eyebrow">Sneaker Company</p><button class="quick-view-trigger" type="button" aria-haspopup="dialog" aria-controls="quick-view" data-quick-view-open>Quick view</button><h1 id="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price-block"><div class="price-line"><span class="current-price">₹9,375</span><span class="discount">50%</span></div><span class="original-price">₹18,750</span></div>
+      <div class="purchase-row"><div class="quantity-control" aria-label="Quantity selector"><button type="button" class="quantity-button" aria-label="Decrease quantity" data-quantity-decrease><img src="images/icon-minus.svg" alt=""></button><output class="quantity-value" aria-live="polite" data-quantity>0</output><button type="button" class="quantity-button" aria-label="Increase quantity" data-quantity-increase><img src="images/icon-plus.svg" alt=""></button></div><button class="add-button" type="button" data-add-to-cart><img src="images/icon-cart.svg" alt=""><span>Add to cart</span></button></div>
+    </section>
+  </main>
+  <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden data-lightbox>
+    <div class="lightbox-inner"><h2 id="lightbox-title" class="visually-hidden">Product image gallery</h2><button class="icon-button lightbox-close" type="button" aria-label="Close image gallery" data-lightbox-close><img src="images/icon-close.svg" alt=""></button>
+      <div class="lightbox-image-wrap"><button class="gallery-arrow lightbox-prev" type="button" aria-label="Previous image" data-lightbox-prev><img src="images/icon-previous.svg" alt=""></button><img class="lightbox-image" src="images/image-product-1.jpg" alt="A pair of white and orange sneakers, front view" data-lightbox-image><button class="gallery-arrow lightbox-next" type="button" aria-label="Next image" data-lightbox-next><img src="images/icon-next.svg" alt=""></button></div>
+      <div class="thumbnail-list lightbox-thumbnails" role="list" aria-label="Choose enlarged product image"><button class="thumbnail active" type="button" role="listitem" aria-label="View enlarged product image 1" aria-pressed="true" data-lightbox-index="0"><img src="images/image-product-1-thumbnail.jpg" alt=""></button><button class="thumbnail" type="button" role="listitem" aria-label="View enlarged product image 2" aria-pressed="false" data-lightbox-index="1"><img src="images/image-product-2-thumbnail.jpg" alt=""></button><button class="thumbnail" type="button" role="listitem" aria-label="View enlarged product image 3" aria-pressed="false" data-lightbox-index="2"><img src="images/image-product-3-thumbnail.jpg" alt=""></button><button class="thumbnail" type="button" role="listitem" aria-label="View enlarged product image 4" aria-pressed="false" data-lightbox-index="3"><img src="images/image-product-4-thumbnail.jpg" alt=""></button></div>
+    </div>
+  </div>
+  <div class="quick-view" id="quick-view" role="dialog" aria-modal="true" aria-labelledby="quick-view-title" hidden data-quick-view>
+    <div class="quick-view-inner">
+      <button class="icon-button quick-view-close" type="button" aria-label="Close quick view" data-quick-view-close><img src="images/icon-close.svg" alt=""></button>
+      <div class="quick-view-content">
+        <img class="quick-view-image" src="images/image-product-1.jpg" alt="A pair of white and orange sneakers, front view" data-quick-view-image>
+        <div class="quick-view-summary">
+          <p class="eyebrow">Sneaker Company</p>
+          <h2 id="quick-view-title">Fall Limited Edition Sneakers</h2>
+          <p class="quick-view-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="price-block"><div class="price-line"><span class="current-price">₹9,375</span><span class="discount">50%</span></div><span class="original-price">₹18,750</span></div>
+          <button class="add-button" type="button" data-quick-view-add><img src="images/icon-cart.svg" alt=""><span>Add to cart</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" hidden data-checkout-modal>
+    <div class="checkout-card">
+      <button class="icon-button checkout-close" type="button" aria-label="Close checkout" data-checkout-close><img src="images/icon-close.svg" alt=""></button>
+      <div class="checkout-heading">
+        <span class="checkout-kicker">Secure checkout</span>
+        <h2 id="checkout-title">Complete your order</h2>
+        <p>Almost there. Enter your details and we’ll get your sneakers moving.</p>
+      </div>
+      <form class="checkout-form" data-checkout-form>
+        <div class="checkout-fields">
+          <label for="checkout-email">Email address</label>
+          <input id="checkout-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="checkout-name">Full name</label>
+          <input id="checkout-name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" required>
+          <label for="checkout-address">Shipping address</label>
+          <input id="checkout-address" name="address" type="text" autocomplete="street-address" placeholder="123 Market Street" required>
+          <label class="checkout-option" for="checkout-different-address">
+            <input id="checkout-different-address" name="different-address" type="checkbox" data-different-address>
+            <span>Ship to a different address</span>
+          </label>
+          <div class="checkout-secondary-address" data-alt-address-field hidden>
+            <label for="checkout-alt-address">Alternative shipping address</label>
+            <input id="checkout-alt-address" name="alt-address" type="text" autocomplete="street-address" placeholder="456 Market Street" data-alt-address>
+          </div>
+        </div>
+        <div class="checkout-order" aria-live="polite" data-checkout-order></div>
+        <button class="checkout-submit" type="submit">Place order</button>
+      </form>
+      <div class="checkout-success" hidden data-checkout-success>
+        <span class="success-mark" aria-hidden="true">✓</span>
+        <h2>Order confirmed</h2>
+        <p>Thanks for your purchase. Your sneakers are on their way.</p>
+        <label class="checkout-option" for="checkout-repeat-different-address">
+          <input id="checkout-repeat-different-address" type="checkbox" data-order-again-different-address>
+          <span>Order again with a different address</span>
+        </label>
+        <div class="checkout-secondary-address" data-order-again-address-field hidden>
+          <label for="checkout-repeat-alt-address">New shipping address</label>
+          <input id="checkout-repeat-alt-address" type="text" autocomplete="street-address" placeholder="789 New Street" data-order-again-address>
+        </div>
+        <button class="checkout-submit" type="button" data-checkout-done>Continue shopping</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
