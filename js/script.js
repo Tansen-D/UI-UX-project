@@ -6,8 +6,8 @@ const products = [
 ];
 
 const state = { imageIndex: 0, quantity: 0, cartQuantity: 0, cartOpen: false, quickViewOpen: false, checkoutOpen: false };
-const price = 9375;
-const formatPrice = (value) => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(value);
+const price = 125;
+const formatPrice = (value) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
 const $ = (selector, parent = document) => parent.querySelector(selector);
 const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
 
